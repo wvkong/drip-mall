@@ -5,7 +5,7 @@ function NavBar({searchChange}) {
   return (
     <div className="navbar">
       <div className="left">
-        <h1>LOGO</h1>
+        <h1>DRIP-MALL</h1>
       </div>
       <div className="center">
         <input
