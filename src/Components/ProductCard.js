@@ -10,7 +10,6 @@ function ProductCard({product, cartIt}) {
       </div>
       <div class="product-info">
         <h2 class="product-brand">{product.title}</h2>
-        <p class="product-short-description">{product.description}</p>
         <span class="price">${product.price}</span>
         <span class="actual-price">${product.actual}</span>
       </div>
