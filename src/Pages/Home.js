@@ -1,10 +1,11 @@
 import React from 'react'
 import ProductCard from '../Components/ProductCard'
+import "./Home.css"
 
 function Home({ products, cartIt, search }) {
   return (
     <div className='homeContainer'>
-      <h2>Top Deals!</h2>
+      <h2 >Top Deals!</h2>
       <div className="product-container">
         {products
           .filter(product => product.title.includes(search))

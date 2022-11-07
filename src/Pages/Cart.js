@@ -1,9 +1,11 @@
 import React from 'react'
 import ProductCard from '../Components/ProductCard';
+import "./Products.css"
+
 
 function Cart({products}) {
   return (
-    <div>
+    <div className="prod-parent-container">
       <div className="product-container">
         {products
           .filter((product) => product.discount >= 50)
