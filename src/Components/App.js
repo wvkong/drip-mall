@@ -13,22 +13,23 @@ import Announcement from "./Announcement";
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("");
+  const URL = "http://localhost:3000";
 
   useEffect(() => {
-    fetch("https://drip-mall-project.herokuapp.com/products")
+    fetch(`${URL}/products`)
       .then((resp) => resp.json())
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
   }, []);
-  
+
   function addToCart(product) {
     if (!cart.includes(product)) {
-      setCart([...cart, product])
-      fetch("https://drip-mall-project.herokuapp.com/cart", {
+      setCart([...cart, product]);
+      fetch(`${URL}/cart`, {
         method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(product)
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(product),
       });
     }
   }
