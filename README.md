@@ -33,7 +33,15 @@ Launch Visual Studio Code
 ```bash
   code .
 ```
+Install Json-Server
+```
+$ npm install -g json-server
+```
+Launch Database by running the code:
 
+```
+$ npm run server
+```
 
 ## License
 
