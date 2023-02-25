@@ -1,4 +1,19 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.current {
+  @apply text-lg text-gray-700 underline md:no-underline;
+}
+.container {
+  @apply max-w-full px-6 my-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  xl:grid-cols-4 2xl:grid-cols-5;
+}
+.category {
+  @apply hover:animate-bounce
+}
+/* body {
   margin: 0;
 }
 .navbar {
@@ -36,10 +51,6 @@ a {
 a:hover {
   text-decoration: underline;
   color: blue;
-}
-a.current {
-  color: white;
-  background-color: black;
 }
 .categories {
   text-align: center;
@@ -148,4 +159,4 @@ a.current {
   height: auto;
   display: flex;
   justify-content: center;
-}
+} */

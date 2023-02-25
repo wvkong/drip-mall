@@ -3,7 +3,7 @@ import ProductCard from '../Components/ProductCard';
 
 function Shoes({ products, cartIt }) {
   return (
-    <div className="product-container">
+    <div className="container">
       {products
         .filter((product) => product.category === "Shoes")
         .map((product) => {

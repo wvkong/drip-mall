@@ -1,26 +1,47 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-function Categories() {  
+function Categories() {
   return (
-    <nav className="categories">
-      <NavLink to="/" exact activeClassName="current">
+    <nav className="text-xl flex items-center font-serif justify-evenly text-gray-500">
+      <NavLink
+        className="category"
+        to="/"
+        exact
+        activeClassName="current"
+      >
         Home
       </NavLink>
-      <NavLink to="/electronics" activeClassName="current">
+      <NavLink
+        className="category"
+        to="/electronics"
+        activeClassName="current"
+      >
         Electronics
       </NavLink>
-      <NavLink to="/fashion" activeClassName="current">
+      <NavLink
+        className="category"
+        to="/fashion"
+        activeClassName="current"
+      >
         Fashion
       </NavLink>
-      <NavLink to="/shoes" activeClassName="current">
+      <NavLink
+        className="category"
+        to="/shoes"
+        activeClassName="current"
+      >
         Shoes
       </NavLink>
-      <NavLink to="/groceries" activeClassName="current">
+      <NavLink
+        className="category"
+        to="/groceries"
+        activeClassName="current"
+      >
         Groceries
       </NavLink>
     </nav>
   );
 }
 
-export default Categories
+export default Categories;

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import Categories from "./Categories";
-import NavBar from "./NavBar";
-import Electronics from "../Pages/Electronics";
-import Fashion from "../Pages/Fashion";
-import Groceries from "../Pages/Groceries";
-import Home from "../Pages/Home";
-import Shoes from "../Pages/Shoes";
-import Cart from "../Pages/Cart";
-import Announcement from "./Announcement";
+import Categories from "./Components/Categories";
+import NavBar from "./Components/NavBar";
+import Electronics from "./Pages/Electronics";
+import Fashion from "./Pages/Fashion";
+import Groceries from "./Pages/Groceries";
+import Home from "./Pages/Home";
+import Shoes from "./Pages/Shoes";
+import Cart from "./Pages/Cart";
+import Announcement from "./Components/Announcement";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -33,8 +33,9 @@ function App() {
       });
     }
   }
+  console.log(products);
   return (
-    <div>
+    <div className="bg-gray-300 overflow-hidden">
       <Announcement />
       <NavBar searchChange={setSearch} />
       <Categories />
